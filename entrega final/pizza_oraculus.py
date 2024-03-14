@@ -1,7 +1,12 @@
 import os
 import openai
 import spacy
+from dotenv import load_dotenv
 
+# cargamos archivo env
+load_dotenv()
+
+# cargamos el openai api key
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 # Cargar modelo de spaCy
@@ -198,7 +203,7 @@ examples = [
             Se necesitan preguntas adicionales: Si.
             Pregunta adicional: Cuanto suma el precio de cada ingrediente?
             Respuesta intermedia: 14
-            La respuesta final es: 14 
+            La respuesta final es: 14
         """,
     },
     {
@@ -234,13 +239,13 @@ for new_ingredient in new_ingredients:
         Dados los ingredientes debes generar:
         - un nombre referente para la pizza gourmet no mayor a 4 palabras
         - completar con un precio estimado conociendo el precio de cada ingrediente. Si se desconoce el precio de un ingrediente estimarlo en base a los ejemplos. No fundamentar.
-        - completar con un tiempo estimado de preparado. No fundamentar. 
+        - completar con un tiempo estimado de preparado. No fundamentar.
         - una breve descripcion incluyendo cada uno de los ingredientes no mayor a 30 palabras
         - un detalle de receta segun las recetas de ejemplos
         -
         [
-            La pizza estilo napolitano, de masa tierna y delgada pero bordes altos, es la versión propia de la cocina napolitana de la pizza redonda. 
-            El término pizza napoletana, por su importancia histórica o regional, se emplea en algunas zonas como sinónimo de pizza tonda (‘pizza redonda’). 
+            La pizza estilo napolitano, de masa tierna y delgada pero bordes altos, es la versión propia de la cocina napolitana de la pizza redonda.
+            El término pizza napoletana, por su importancia histórica o regional, se emplea en algunas zonas como sinónimo de pizza tonda (‘pizza redonda’).
             Bajo la denominación pizza napoletana verace artigianale (‘pizza napolitana auténtica artesanal’) está reconocida como producto agroalimentario tradicional italiano.
             La peculiaridad de la pizza napolitana se debe principalmente a su base, que debe prepararse con masa de pan (completamente desprovista de grasa) tierna y elástica, estirada a mano en forma de disco sin tocar los bordes, que durante la cocción formarán la típica ‘bordes’ (cornicioni) de 1 o 2 cm, mientras que en el centro la masa tendrá unos 3 mm de altura. Un paso rápido por un horno muy caliente debe dejarla húmeda y suave, no demasiado cocida.
             De acuerdo con el pliego de condiciones de la definición de las normas internacionales para la obtención de la marca «Pizza Napolitana» la cocción debe realizarse en horno de leña a unos 485 °C durante unos 90 segundos.
