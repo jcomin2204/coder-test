@@ -26,31 +26,31 @@ def ask_chatgpt(conversation, model, tokens):
 recipes = {
     "recipes": [
         {
-            "name": "quattro formaggi pizza",
+            "name": "quattro formaggi",
             "minutes": 5,
             "ingredients": [
                 {
-                    "name": "dough ball",
+                    "name": "masa",
                     "price": 4,
-                    "type": "00 flour",
+                    "type": "harina 00",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 4,
                     "type": "mozzarella fior di latte",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 2,
                     "type": "provolone picante",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 2,
                     "type": "gorgonzola",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 2,
                     "type": "taleggio",
                 },
@@ -61,12 +61,12 @@ recipes = {
             "minutes": 2,
             "ingredients": [
                 {
-                    "name": "dough ball",
+                    "name": "masa",
                     "price": 4,
-                    "type": "00 flour",
+                    "type": "harina 00",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 4,
                     "type": "mozzarella fior di latte",
                 },
@@ -82,9 +82,9 @@ recipes = {
             "minutes": 2,
             "ingredients": [
                 {
-                    "name": "dough ball",
+                    "name": "masa",
                     "price": 4,
-                    "type": "00 flour",
+                    "type": "harina 00",
                 },
                 {
                     "name": "evo oil",
@@ -99,57 +99,57 @@ recipes = {
             ],
         },
         {
-            "name": "basil pesto",
+            "name": "pesto de albahaca",
             "minutes": 6,
             "ingredients": [
                 {
-                    "name": "dough ball",
+                    "name": "masa",
                     "price": 4,
-                    "type": "00 flour",
+                    "type": "harina 00",
                 },
                 {
-                    "name": "basil pesto",
+                    "name": "pesto de albahaca",
                     "price": 0.1,
                     "type": "",
                 },
                 {
-                    "name": "garlic",
+                    "name": "ajo",
                     "price": 0.2,
                     "type": "",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 2,
                     "type": "parmigiano reggiano",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 2,
                     "type": "mozzarella fior di latte",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 2,
                     "type": "gorgonzola",
                 },
                 {
-                    "name": "nuts",
+                    "name": "almendras",
                     "price": 1,
                     "type": "",
                 },
             ],
         },
         {
-            "name": "green garlic marinara",
+            "name": "marinara verde de ajo",
             "minutes": 7,
             "ingredients": [
                 {
-                    "name": "dough ball",
+                    "name": "masa",
                     "price": 4,
-                    "type": "00 flour",
+                    "type": "harina 00",
                 },
                 {
-                    "name": "anchovies",
+                    "name": "anchoas",
                     "price": 3.2,
                     "type": "",
                 },
@@ -159,22 +159,22 @@ recipes = {
                     "type": "san marzano",
                 },
                 {
-                    "name": "basil",
+                    "name": "albahaca",
                     "price": 0.2,
                     "type": "",
                 },
                 {
-                    "name": "garlic",
+                    "name": "ajo",
                     "price": 0.3,
                     "type": "green",
                 },
                 {
-                    "name": "pepper",
+                    "name": "pimienta",
                     "price": 0.1,
                     "type": "",
                 },
                 {
-                    "name": "cheese",
+                    "name": "queso",
                     "price": 2,
                     "type": "parmigiano reggiano",
                 },
@@ -192,7 +192,7 @@ examples = [
             Respuesta intermedia: No.
             Pregunta adicional: La Quattro Formaggi incluye 3 quesos adicionales?
             Respuesta intermedia: Si.
-            Pregunta adicional: La Basil Pesto tiene 2 quesos adicionales?
+            Pregunta adicional: La pesto de albahaca tiene 2 quesos adicionales?
             Respuesta intermedia: Si.
             La respuesta final es: La Quattro Formaggi
         """,
@@ -211,10 +211,10 @@ examples = [
         "answer": """
             Se necesitan preguntas adicionales: Si.
             Pregunta adicional: Cual es la pizza que lleva mas ingredientes?
-            Respuesta intermedia: La Green Garlic Marinara
+            Respuesta intermedia: La marinara verde de ajo
             Pregunta adicional: Cual es la pizza que lleva mas tiempo de preparado?
-            Respuesta intermedia: La Green Garlic Marinara.
-            La respuesta final es: La Green Garlic Marinara
+            Respuesta intermedia: La marinara verde de ajo
+            La respuesta final es: La marinara verde de ajo
         """,
     },
 ]
