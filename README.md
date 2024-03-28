@@ -14,4 +14,5 @@ Dado un conjunto de ingredientes disponibles se utilizará IA para generar difer
 - ENV = prd | env
 - PROJECT_NAME = CoderTest
 5. Ejecuta `python ...` para correr los archivos ejemplos
-6. Ejecuta `python entrega_1.py` para correr el proyecto final
+6. Ingresa al directorio `\entrega final`
+7. Ejecuta `python pizza_oraculus.py` para correr el proyecto final
